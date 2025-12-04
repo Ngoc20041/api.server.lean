@@ -8,6 +8,7 @@ export async function GET(_req: Request, context: { params: Promise<{ id: string
         id: params.id,
         name: 'User X',
         email: 'userx@example.com',
+        avatar: 'https://cdn-media.sforum.vn/storage/app/media/wp-content/uploads/2023/11/avatar-vo-tri-thumbnail.jpg',
         role: 'user'
     });
 }
