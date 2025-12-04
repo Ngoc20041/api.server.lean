@@ -196,8 +196,3 @@ Mọi lỗi sẽ trả về format chuẩn:
 ```
 
 ---
-
-# 4. Notes
-
-* Có thể mở rộng thêm: phân trang nâng cao, lọc theo role, search, sort.
-* Có thể bổ sung JWT Auth hoặc API Key.

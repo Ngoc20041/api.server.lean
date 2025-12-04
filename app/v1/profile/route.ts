@@ -1,5 +1,5 @@
 // app/api/v1/profile/route.ts
-import { NextResponse } from 'next/server';
+import {NextResponse} from 'next/server';
 
 
 export async function GET() {
@@ -10,10 +10,16 @@ export async function GET() {
         avatar: 'https://example.com/avatar.png'
     });
 }
+
 export async function PUT(req: Request) {
-    const body = await req.json();
-    return NextResponse.json({
-        message: 'Profile updated successfully',
-        data: body
-    });
+    try {
+        const body = await req.json();
+        return NextResponse.json({
+            message: 'Profile updated successfully',
+            data: body
+        });
+    } catch (e) {
+        return NextResponse.json({error: true, message: e.message});
+    }
+
 }

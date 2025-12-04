@@ -1,5 +1,5 @@
 // app/api/users/route.ts
-import { NextResponse } from 'next/server';
+import {NextResponse} from 'next/server';
 
 
 export async function GET(req: Request) {
@@ -8,14 +8,19 @@ export async function GET(req: Request) {
         limit: 20,
         total: 2,
         data: [
-            { id: 1, name: 'User A', email: 'a@example.com', role: 'admin' },
-            { id: 2, name: 'User B', email: 'b@example.com', role: 'user' }
+            {id: 1, name: 'User A', email: 'a@example.com', role: 'admin'},
+            {id: 2, name: 'User B', email: 'b@example.com', role: 'user'}
         ]
     });
 }
 
 
 export async function POST(req: Request) {
-    const body = await req.json();
-    return NextResponse.json({ id: 101, message: 'User created successfully', data: body });
+    try {
+        const body = await req.json();
+        return NextResponse.json({id: 101, message: 'User created successfully', data: body});
+
+    } catch (e) {
+        return NextResponse.json({error: true, message: e.message});
+    }
 }
