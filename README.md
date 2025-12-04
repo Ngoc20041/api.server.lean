@@ -9,7 +9,7 @@ Tài liệu này mô tả API đầy đủ CRUD cho 2 nhóm chức năng:
 
 Format mặc định: JSON
 Auth: Bearer Token (nếu cần)
-Base URL: `https://api.example.com/v1`
+Base URL: `https://apiserverlean.vercel.app/v1`
 
 ---
 
@@ -64,7 +64,7 @@ Quản lý danh sách người dùng và CRUD.
 
 ## 2.1. Danh sách user
 
-**GET** `/users?limit=20&page=1`
+**GET** `/users`
 
 **Response 200**
 
@@ -188,8 +188,3 @@ Mọi lỗi sẽ trả về format chuẩn:
 ```
 
 ---
-
-# 4. Notes
-
-* Có thể mở rộng thêm: phân trang nâng cao, lọc theo role, search, sort.
-* Có thể bổ sung JWT Auth hoặc API Key.
