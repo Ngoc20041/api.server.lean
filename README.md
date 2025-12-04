@@ -87,6 +87,7 @@ Quản lý danh sách người dùng và CRUD.
       "name": "User A",
       "email": "a@example.com",
       "role": "admin",
+      "avatar": "https://example.com/avatar.png",
       "created_at": "2025-01-01T12:00:00Z"
     },
     {
@@ -94,6 +95,7 @@ Quản lý danh sách người dùng và CRUD.
       "name": "User B",
       "email": "b@example.com",
       "role": "user",
+      "avatar": "https://example.com/avatar.png",
       "created_at": "2025-02-01T12:00:00Z"
     }
   ]
@@ -114,6 +116,7 @@ Quản lý danh sách người dùng và CRUD.
   "name": "User X",
   "email": "userx@example.com",
   "role": "user",
+  "avatar": "https://example.com/avatar.png",
   "created_at": "2025-03-10T12:00:00Z"
 }
 ```

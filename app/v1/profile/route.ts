@@ -7,7 +7,7 @@ export async function GET() {
         id: 1,
         name: 'Nguyen Van A',
         email: 'a@example.com',
-        avatar: 'https://example.com/avatar.png'
+        avatar: 'https://cdn-media.sforum.vn/storage/app/media/wp-content/uploads/2023/11/avatar-vo-tri-thumbnail.jpg'
     });
 }
 
