@@ -54,6 +54,27 @@ export async function GET(req: Request) {
                 email: 'g@example.com',
                 role: 'user',
                 avatar: 'https://cdn-media.sforum.vn/storage/app/media/wp-content/uploads/2023/11/avatar-vo-tri-thumbnail.jpg'
+            },
+            {
+                id: 8,
+                name: 'User H',
+                email: 'g@example.com',
+                role: 'user',
+                avatar: 'https://cdn-media.sforum.vn/storage/app/media/wp-content/uploads/2023/11/avatar-vo-tri-thumbnail.jpg'
+            },
+            {
+                id: 9,
+                name: 'User I',
+                email: 'g@example.com',
+                role: 'user',
+                avatar: 'https://cdn-media.sforum.vn/storage/app/media/wp-content/uploads/2023/11/avatar-vo-tri-thumbnail.jpg'
+            },
+            {
+                id: 10,
+                name: 'User K',
+                email: 'g@example.com',
+                role: 'user',
+                avatar: 'https://cdn-media.sforum.vn/storage/app/media/wp-content/uploads/2023/11/avatar-vo-tri-thumbnail.jpg'
             }
         ]
     });
